@@ -114,3 +114,12 @@ Group By Genre.name; */
 FROM Artist
 JOIN Album on Artist.ArtistId = Album.ArtistId
 GROUP BY Album.ArtistId; */
+
+/* SELECT DISTINCT Composer
+FROM Track; */
+
+/* SELECT DISTINCT BillingPostalCode
+FROM Invoice; */
+
+/* SELECT DISTINCT Company
+FROM Customer; */

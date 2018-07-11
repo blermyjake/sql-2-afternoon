@@ -98,3 +98,19 @@ WHERE Email = "luisrojas@yahoo.cl"; */
 SET Composer = "The darkness around us"
 WHERE GenreId = ( SELECT GenreId FROM Genre WHERE Name = "Metal" )
 AND Composer IS null; */
+
+/* SELECT Count (*), genre.Name
+FROM track
+JOIN Genre ON Track.GenreId = Genre.GenreId
+GROUP BY genre.Name; */
+
+/* SELECT Count (*), genre.Name
+FROM track
+JOIN Genre ON Genre.GenreId = Track.GenreId
+WHERE Genre.Name = "Pop" OR Genre.Name = "Rock"
+Group By Genre.name; */
+
+/* SELECT Artist.Name, Count(*)
+FROM Artist
+JOIN Album on Artist.ArtistId = Album.ArtistId
+GROUP BY Album.ArtistId; */

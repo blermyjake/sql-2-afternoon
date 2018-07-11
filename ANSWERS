@@ -142,3 +142,46 @@ SELECT * FROM practice_delete; */
 /* DELETE FROM practice_delete WHERE Type = "silver"; */
 
 /* DELETE FROM practice_delete WHERE Value = 150; */
+
+
+/* create table Users (
+  id integer primary key autoincrement,
+  name text,
+  email text
+  ); */
+
+/* create table Products (
+  id integer primary key autoincrement,
+  name text,
+  price float
+  ); */
+
+
+/* create table Orders (
+  id integer primary key autoincrement,
+  userName text,
+  productName text,
+  quantity integer,
+  totalPrice float
+  ); */
+
+/* INSERT INTO Users ( name, email)
+VALUES ("John", "J@yahoo.com"), ("Bill", "B@gmail.com"), ("Gary", "G@hotmail.com"); */
+
+/* INSERT INTO Products ( name, price)
+VALUES ("Shirt", 12.50), ("Hat", 10), ("Shorts", 25); */
+
+/* SELECT * FROM Products; */
+
+/* INSERT INTO Orders ( userName, productname, quantity, totalPrice)
+VALUES ("John", "Hat", 3, 30 ), ("Bill", "Shirt",2, 25), ("Gary", "Shorts",1, 25); */
+
+
+
+/* SELECT productName From orders WHERE id = 1; */
+
+/* SELECT * FROM orders; */
+
+/* SELECT totalPrice FROM orders WHERE id = 3; */
+
+

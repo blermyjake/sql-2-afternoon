@@ -21,3 +21,54 @@ JOIN Employee e ON c.SupportRepId = e.EmployeeId; */
 /* SELECT al.Title, ar.Name
 FROM Artist ar
 JOIN Album al ON ar.ArtistId = al.AlbumId; */
+
+/* SELECT pt.TrackId
+FROM PlaylistTrack pt
+JOIN Playlist p ON p.PlaylistId = pt.PlaylistId
+WHERE p.Name = 'Music'; */
+
+/*  SELECT pl.Name
+ FROM PlaylistTrack plt
+ JOIN Playlist pl ON  */
+ 
+
+/* SELECT t.Name
+FROM Track t
+JOIN PlaylistTrack pt ON pt.TrackId = t.TrackId
+WHERE pt.PlaylistId = 5; */
+
+/* SELECT Track.Name
+FROM Track
+JOIN PlaylistTrack ON Track.TrackId = PlaylistTrack.TrackId
+JOIN Playlist ON PlaylistTrack.PlaylistId = Playlist.PlaylistId;  */
+
+/* SELECT Track.NAME, Album.Title
+FROM Track 
+JOIN Album ON Track.AlbumId = Album.AlbumId
+JOIN Genre ON Genre.GenreId = Track.GenreId
+WHERE Genre.Name = "Alternative";  */
+
+
+/* SELECT *
+FROM Invoice 
+JOIN InvoiceLine ON InvoiceLine.invoiceId = Invoice.invoiceId
+WHERE UnitPrice > 0.99; */
+
+/* SELECT *
+FROM PlaylistTrack
+WHERE PlaylistId IN 
+( SELECT PlaylistId FROM Playlist WHERE Name = "Music" ); */
+
+/* SELECT Name
+FROM Track
+WHERE TrackId IN ( SELECT TrackId FROM PlaylistTrack WHERE PlaylistId = 5 ); */
+
+/* SELECT *
+FROM Track
+WHERE GenreId IN ( SELECT GenreId FROM Genre WHERE Name = "Comedy"); */
+
+/* SELECT *
+FROM Track
+WHERE AlbumId IN ( SELECT AlbumId FROM Album WHERE Name = "Fireball"); */
+
+

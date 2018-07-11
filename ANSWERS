@@ -159,7 +159,7 @@ SELECT * FROM practice_delete; */
 
 /* create table Orders (
   id integer primary key autoincrement,
-  userName text,
+  userName text foreign key REFERENCE ,
   productName text,
   quantity integer,
   totalPrice float
@@ -183,5 +183,3 @@ VALUES ("John", "Hat", 3, 30 ), ("Bill", "Shirt",2, 25), ("Gary", "Shorts",1, 25
 /* SELECT * FROM orders; */
 
 /* SELECT totalPrice FROM orders WHERE id = 3; */
-
-

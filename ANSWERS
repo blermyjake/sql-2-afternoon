@@ -123,3 +123,22 @@ FROM Invoice; */
 
 /* SELECT DISTINCT Company
 FROM Customer; */
+
+/* CREATE TABLE practice_delete ( Name string, Type string, Value integer );
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "bronze", 50);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "bronze", 50);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "bronze", 50);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "silver", 100);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "silver", 100);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "gold", 150);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "gold", 150);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "gold", 150);
+INSERT INTO practice_delete ( Name, Type, Value ) VALUES ("delete", "gold", 150);
+
+SELECT * FROM practice_delete; */
+
+/* DELETE FROM practice_delete WHERE Type = "bronze"; */
+
+/* DELETE FROM practice_delete WHERE Type = "silver"; */
+
+/* DELETE FROM practice_delete WHERE Value = 150; */

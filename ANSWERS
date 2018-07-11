@@ -71,4 +71,30 @@ WHERE GenreId IN ( SELECT GenreId FROM Genre WHERE Name = "Comedy"); */
 FROM Track
 WHERE AlbumId IN ( SELECT AlbumId FROM Album WHERE Name = "Fireball"); */
 
+/* SELECT *
+FROM Track
+WHERE AlbumId IN ( 
+  SELECT AlbumId FROM Album WHERE ArtistId IN ( 
+    SELECT ArtistId FROM Artist WHERE Name = "Queen" 
+  )
+);  */
 
+/* UPDATE Customer
+SET Fax = Null; */
+
+/* UPDATE Customer
+SET Company = "Self"
+WHERE Company IS null; */
+
+/* UPDATE Customer 
+SET LastName = "Thompson" 
+WHERE FirstName = "Julia" AND LastName = "Barnett"; */
+
+/* UPDATE Customer
+SET SupportRepId = 4
+WHERE Email = "luisrojas@yahoo.cl"; */
+
+/* UPDATE Track
+SET Composer = "The darkness around us"
+WHERE GenreId = ( SELECT GenreId FROM Genre WHERE Name = "Metal" )
+AND Composer IS null; */

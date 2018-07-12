@@ -158,11 +158,9 @@ SELECT * FROM practice_delete; */
 
 
 /* create table Orders (
-  id integer primary key autoincrement,
-  userName text foreign key REFERENCE ,
-  productName text,
-  quantity integer,
-  totalPrice float
+  id varchar(25),
+  Users_id REFERENCES Users (id) ,
+  Products_id REFERENCES Products (id)
   ); */
 
 /* INSERT INTO Users ( name, email)
@@ -171,15 +169,12 @@ VALUES ("John", "J@yahoo.com"), ("Bill", "B@gmail.com"), ("Gary", "G@hotmail.com
 /* INSERT INTO Products ( name, price)
 VALUES ("Shirt", 12.50), ("Hat", 10), ("Shorts", 25); */
 
-/* SELECT * FROM Products; */
+/* SELECT * FROM Users; */
 
-/* INSERT INTO Orders ( userName, productname, quantity, totalPrice)
-VALUES ("John", "Hat", 3, 30 ), ("Bill", "Shirt",2, 25), ("Gary", "Shorts",1, 25); */
+/* INSERT INTO Orders ( id, Users_id, Products_id)
+VALUES ("Purch1", 1, 2), 
+("Purch2", 3, 3), 
+("Purch3", 2, 1); */
 
+/* SELECT * FROM Orders; */
 
-
-/* SELECT productName From orders WHERE id = 1; */
-
-/* SELECT * FROM orders; */
-
-/* SELECT totalPrice FROM orders WHERE id = 3; */
